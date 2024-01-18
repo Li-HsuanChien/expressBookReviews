@@ -261,8 +261,8 @@
   -**JSON File in request body:**
   ```json
     {
-      "username":your_username,
-      "password":your_password
+      "username":<:your_username>,
+      "password":<:your_password>
     }
   ```
 
@@ -273,7 +273,7 @@
     ```
     Response:
     ```json
-    { message: `User ${username} successfully registred. Now you can login` }
+    { "message": `User samplename successfully registred. Now you can login` }
     ```
 #### **Functionality 7**
 
@@ -303,7 +303,7 @@
 
     Response:
     ```json
-    { message: "User samplename successfully logged in" }
+    { "message": "User samplename successfully logged in" }
     ```
 
 #### **Functionality 8**
@@ -340,7 +340,7 @@
 
     Response:
     ```json
-    {message: "The review of ID 1 has been added/modified"}
+    { "message": "The review of ID 1 has been added/modified"}
     ```
 
 #### **Functionality 9**
