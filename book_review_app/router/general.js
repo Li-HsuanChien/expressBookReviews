@@ -33,12 +33,12 @@ public_users.post("/register", (req, res) => {
       users.push({ username: username, password: password });
       return res
         .status(200)
-        .send({ message: `User ${username} successfully registred. Now you can login` });
+        .json({ "message": `User ${username} successfully registred. Now you can login` });
     } else {
-      return res.status(404).json({ message: "User already exists!" });
+      return res.status(404).json({ "message": "User already exists!" });
     }
   }
-  return res.status(404).json({ message: "Unable to register user." });
+  return res.status(404).json({ "message": "Unable to register user." });
 });
 
 // Get the book list available in the shop
@@ -64,14 +64,14 @@ public_users.get("/id/:id", function (req, res) {
       if(Object.keys(books).length > 0){
         return res.status(200).send(JSON.stringify(books[id]));
       }else{
-        return res.send(`No books with id ${id} found`)
+        return res.json({ "message": `No books with id ${id} found`})
       }
       
     })
     .catch((error) => {
       // Handle errors here
       console.error("Error fetching books:", error);
-      return res.status(500).send("Internal Server Error");
+      return res.status(500).json({"message": "Internal Server Error"});
     });
 });
 
@@ -88,14 +88,14 @@ public_users.get("/author/:author", function (req, res) {
         return res.status(200).send(JSON.stringify(filteredBooks, null, 4));
       }
       else{
-        return res.send(`No books with author ${author} found`);
+        return res.json({ "message": `No books with author ${author} found`});
       }
       
     })
     .catch((error) => {
       // Handle errors here
       console.error("Error fetching books:", error);
-      return res.status(500).send("Internal Server Error");
+      return res.status(500).json({"message": "Internal Server Error"});
     });
 });
 
@@ -111,20 +111,20 @@ public_users.get("/title/:title", function (req, res) {
         return res.status(200).send(JSON.stringify(filteredBooks, null, 4));
       }
       else{
-        return res.send(`No books with title ${title} found`);
+        return res.json({"message": `No books with title ${title} found`});
       }
     })
     .catch((error) => {
       // Handle errors here
       console.error("Error fetching books:", error);
-      return res.status(500).send("Internal Server Error");
+      return res.status(500).json({"message": "Internal Server Error"});
     });
 });
 
 //  Get book review
 public_users.get("/review/:id", function (req, res) {
   const id = req.params.id;
-  return res.status(200).send(books[id]["reviews"]);
+  return res.status(200).json({"review": books[id]["reviews"]});
 });
 
 module.exports.general = public_users;
