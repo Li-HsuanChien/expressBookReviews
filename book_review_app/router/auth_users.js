@@ -19,7 +19,7 @@ regd_users.post("/login", (req, res) => {
     const password_input = req.body.password;
   
     if (!username_input || !password_input) {
-      return res.status(404).json({ message: "missing username or password input" });
+      return res.status(404).json({ "message": "missing username or password input" });
     }
   
     if (authenticatedUser(username_input, password_input)) {
@@ -31,10 +31,10 @@ regd_users.post("/login", (req, res) => {
       req.session.authorization = {
         accessToken, username_input
       }
-      return res.status(200).json({message: `User ${username_input} logged in successfully`});      
+      return res.status(200).json({ "message" : `User ${username_input} logged in successfully`});      
     }
     else {
-      return res.status(208).json({ message: "Invalid cridentials. Check Username or Password" });
+      return res.status(208).json({ "message" : "Invalid cridentials. Check Username or Password" });
     }
   });
 
@@ -46,10 +46,10 @@ regd_users.post("/login", (req, res) => {
     if (books[id]) {
       let book_target = books[id];
       book_target.reviews[username_status] = review_input;
-      return res.status(200).json({message:`The review of ID ${id} has been added/modified`});
+      return res.status(200).json({ "message":`The review of ID ${id} has been added/modified`});
     }
     else {
-      return res.status(404).json({ message: `ID ${id} not found` });
+      return res.status(404).json({ "message": `ID ${id} not found` });
     }
   });
   
@@ -62,7 +62,7 @@ regd_users.post("/login", (req, res) => {
       return res.status(200).send(`Review for book with ID ${id} has been deleted`);
     }
     else {
-      return res.status(404).json({ message: `ID ${id} not found` });
+      return res.status(404).json({ "message": `ID ${id} not found` });
     }
   });
 
