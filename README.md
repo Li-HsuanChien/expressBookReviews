@@ -261,8 +261,8 @@
   -**JSON File in request body:**
   ```json
     {
-      "username":<:your_username>,
-      "password":<:your_password>
+      "username": "<:your_username>",
+      "password": "<:your_password>"
     }
   ```
 
@@ -273,7 +273,7 @@
     ```
     Response:
     ```json
-    { "message": `User samplename successfully registred. Now you can login` }
+    { "message": "User samplename successfully registred. Now you can login" }
     ```
 #### **Functionality 7**
 
@@ -290,8 +290,8 @@
   - **JSON File in Request Body:**
     ```json
     {
-      "username": "your_username",
-      "password": "your_password"
+      "username": "<:your_username>",
+      "password": "<:your_password>"
     }
     ```
 
