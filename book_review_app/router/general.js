@@ -124,7 +124,7 @@ public_users.get("/title/:title", function (req, res) {
 //  Get book review
 public_users.get("/review/:id", function (req, res) {
   const id = req.params.id;
-  return res.status(200).json({"review": books[id]["reviews"]});
+  return res.status(200).send( json.stringify(books[id]["reviews"], 4, null));
 });
 
 module.exports.general = public_users;
