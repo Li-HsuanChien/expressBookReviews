@@ -1,4 +1,11 @@
+<a name="readme-top"></a>
 # Book Review App
+
+### Built With
+
+* [![Express][Express.js]][Express-url]
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Overview
   The key features of the app include authorization, searching for books based on title, author, or ID, and the ability to add, edit, delete, and read reviews for each book.
@@ -11,7 +18,11 @@
 - [Node.js](https://nodejs.org/en/) installed on your machine.
 - [npm (Node Package Manager)](https://www.npmjs.com/) installed.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Running the App
+
+**Manual commands**
 
 1. Clone this repository to your local machine:
 
@@ -58,6 +69,8 @@
     ```
 7. The application will be listening to `http://localhost:5000/` by default.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 **Using Docker Containers**
 
 1. Clone this repository to your local machine:
@@ -81,6 +94,8 @@
 
     ```bash
         docker run -p 5000:5000 <insert-your-own-image-name>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
@@ -419,7 +434,7 @@
       "message": "Review deleted successfully"
     }
     ```
-  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
     
 ## Awaiting Updates
 
@@ -431,11 +446,23 @@
 
 3. **Hosting Website**
    - hosting website on the cloud
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-Feel free to contribute to the development of this budget management system by creating issues or pull requests.
+Feel free to contribute to the development of this  system by creating issues or pull requests.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+[Express-url]: https://expressjs.com/
