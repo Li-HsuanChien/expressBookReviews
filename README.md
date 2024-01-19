@@ -58,6 +58,30 @@
     ```
 7. The application will be listening to `http://localhost:5000/` by default.
 
+**Using Docker Containers**
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone https://github.com/Li-HsuanChien/expressBookReviews.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd expressBookReviews
+    ```
+3. Build Docker image:
+
+    ```bash
+        docker build -t <insert-your-own-image-name> .
+    ```
+
+3. Run containers wth image:
+
+    ```bash
+        docker run -p 5000:5000 <insert-your-own-image-name>
+
 ## Usage
 
 ### API Endpoints
