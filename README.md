@@ -1,4 +1,12 @@
 <a name="readme-top"></a>
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # Book Review App
 
 ### Built With
@@ -465,6 +473,18 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
+[contributors-shield]: https://img.shields.io/github/contributors/Li-HsuanChien/expressBookReviews.svg?style=for-the-badge
+[contributors-url]: https://github.com/Li-HsuanChien/expressBookReviews/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Li-HsuanChien/expressBookReviews.svg?style=for-the-badge
+[forks-url]: https://github.com/Li-HsuanChien/expressBookReviews/network/members
+[stars-shield]: https://img.shields.io/github/stars/Li-HsuanChien/expressBookReviews.svg?style=for-the-badge
+[stars-url]: https://github.com/Li-HsuanChien/expressBookReviews/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Li-HsuanChien/expressBookReviews.svg?style=for-the-badge
+[issues-url]: https://github.com/Li-HsuanChien/expressBookReviews/issues
+[license-shield]: https://img.shields.io/github/license/Li-HsuanChien/expressBookReviews.svg?style=for-the-badge
+[license-url]: https://github.com/Li-HsuanChien/expressBookReviews/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/lihsuan-chien/
 
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org
