@@ -22,7 +22,7 @@
 2. Navigate to the project directory:
 
     ```bash
-    cd book_review_app
+    cd expressBookReviews/book_review_app
     ```
 
 3.  Set up a virtual environment (optional but recommended):
@@ -85,7 +85,7 @@
     Response:
     ```json
     {
-     "1": {
+      "1": {
           "author": "Chinua Achebe",
           "title": "Things Fall Apart",
           "reviews": {
@@ -117,6 +117,26 @@
           "author": "Unknown",
           "title": "One Thousand and One Nights",
           "reviews": {}
+      },
+      "7": {
+          "author": "Unknown",
+          "title": "Njál's Saga",
+          "reviews": {}
+      },
+      "8": {
+          "author": "Jane Austen",
+          "title": "Pride and Prejudice",
+          "reviews": {}
+      },
+      "9": {
+          "author": "Honoré de Balzac",
+          "title": "Le Père Goriot",
+          "reviews": {}
+      },
+      "10": {
+          "author": "Samuel Beckett",
+          "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+          "reviews": {}
       }
     }
     ```
@@ -144,7 +164,7 @@
 
     Response:
     ```json
-    {"author":"","title":"Things Fall Apart","reviews":{"shane":"I like it","Jason":"not bad"}}
+    {"author":"Chinua Achebe","title":"Things Fall Apart","reviews":{"shane":"I like it","Jason":"not bad"}}
     ```
 #### **Functionality 3**
 
@@ -184,8 +204,13 @@
           "author": "Unknown",
           "title": "One Thousand and One Nights",
           "reviews": {}
+      },
+      {
+          "author": "Unknown",
+          "title": "Njál's Saga",
+          "reviews": {}
       }
-    ]
+  ]
     ```
 #### **Functionality 4**
 
@@ -331,11 +356,11 @@
   - Request:
   - POST:
     ```bash
-    curl -X POST -d '{"review": "Great book!"}' -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_ACCESS_TOKEN" http://localhost:5000/customer/auth/review/1
+    curl -X POST -d "{\"review\": \"Great book!\"}" -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_ACCESS_TOKEN" http://localhost:5000/customer/auth/review/1
     ```
   - PUT:
     ```bash
-    curl -X PUT -d '{"review": "Great book!"}' -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_ACCESS_TOKEN" http://localhost:5000/customer/auth/review/1
+    curl -X PUT -d "{\"review\": \"Worst Ever\"}" -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_ACCESS_TOKEN" http://localhost:5000/customer/auth/review/1
     ```
 
     Response:
